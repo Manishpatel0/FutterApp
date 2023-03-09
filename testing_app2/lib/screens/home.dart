@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               context.go('/${FavoritesPage.routeName}');
             },
             icon: const Icon(Icons.favorite_border),
-            laber: const Text('Favorites'),
+            label: const Text('Favorites'),
           ),
         ],
       ),
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
 
 class ItemTile extends StatelessWidget {
   final int itemNo;
-  
+
   ItemTile(this.itemNo, {super.key});
 
   @override

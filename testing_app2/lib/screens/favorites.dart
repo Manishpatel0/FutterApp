@@ -16,7 +16,7 @@ class FavoritesPage extends StatelessWidget {
       ),
       body: Consumer<Favorites>(
         builder: (context, value, child) => ListView.builder(
-          itemCount: value.,
+          itemCount: value.items.length,
           padding: const EdgeInsets.symmetric(vertical: 16),
           itemBuilder: (context, index) => FavoriteItemTile(value.items[index]),
         ),
